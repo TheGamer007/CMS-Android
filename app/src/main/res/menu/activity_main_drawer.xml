@@ -15,10 +15,17 @@
             android:id="@+id/site_news"
             android:icon="@drawable/ic_newspaper"
             android:title="Site News" />
+
         <item
             android:id="@+id/course_search"
             android:icon="@drawable/ic_magnify"
             android:title="@string/course_search_navigation_drawer" />
+
+        <item
+            android:id="@+id/file_search"
+            android:icon="@drawable/ic_magnify"
+            android:title="File Search"/>
+
         <item
             android:id="@+id/website"
             android:checkable="false"

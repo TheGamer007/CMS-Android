@@ -26,6 +26,8 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 
 import app.Constants;
+import app.MyApplication;
+import crux.bphc.cms.fragments.FileSearchFragment;
 import crux.bphc.cms.fragments.MyCoursesFragment;
 import crux.bphc.cms.fragments.SearchCourseFragment;
 import crux.bphc.cms.fragments.SiteNewsFragment;
@@ -167,6 +169,15 @@ public class MainActivity extends AppCompatActivity
         transaction.commit();
     }
 
+    private void setFileSearch() {
+        clearBackStack();
+        fragment = new FileSearchFragment();
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.content_main, fragment, "File Search")
+                .commit();
+    }
+
     private void setSiteNews() {
         clearBackStack();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -229,6 +240,9 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.course_search:
                 setCourseSearch();
+                break;
+            case R.id.file_search:
+                setFileSearch();
                 break;
             case R.id.website:
 
