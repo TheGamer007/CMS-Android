@@ -29,7 +29,6 @@ public class UserUtils {
         realm.beginTransaction();
         realm.deleteAll();
         realm.commitTransaction();
-        realm.close();
         UserAccount userAccount = new UserAccount(context);
         userAccount.logout();
     }

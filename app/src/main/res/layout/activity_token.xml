@@ -32,11 +32,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/instructions"
             android:padding="12dp"
-            android:background="@android:color/white"
-            android:textAllCaps="false"
-            android:textColor="#676767"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
             android:textSize="16sp"
-            android:text="@string/instructions" />
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:text="@string/get_token" />
 
         <EditText
             android:layout_width="match_parent"

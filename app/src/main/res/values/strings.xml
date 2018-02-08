@@ -11,7 +11,7 @@
     <string name="error_field_required">This field is required</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="token_hint">Token</string>
-    <string name="instructions">Security keys > copy \"Moodle mobile web service\" and paste below.</string>
+    <string name="get_token">Get Access Token</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
